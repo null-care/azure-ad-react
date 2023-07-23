@@ -16,7 +16,7 @@ Create the configuration
 ```js
 // AzureAdConfig.ts
 
-import { AzureAdConfiguration } from '@null/azure-ad-react';
+import { AzureAdConfiguration } from '@nullcare/azure-ad-react';
 
 export const azureAdConfig: AzureAdConfiguration = {
   return {
@@ -55,7 +55,7 @@ Import the configuration and pass it to the provider
 
 // Import the configuration object
 import { azureAdConfig } from './AzureAdConfig'
-import { AuthProvider, Auth } from '@null/azure-ad-react';
+import { AuthProvider, Auth } from '@nullcare/azure-ad-react';
 
 const AppProvider = () => (
 
@@ -70,14 +70,14 @@ const AppProvider = () => (
 
 ## Initialization
 
-`@null/azure-ad-react` is built on the [React context API](https://reactjs.org/docs/context.html) and all parts of your app that require authentication must be wrapped in the `AuthProvider` component. You will first need to define your the `AzureAdConfiguration` and then pass this to `AuthProvider` as a prop.
+`@nullcare/azure-ad-react` is built on the [React context API](https://reactjs.org/docs/context.html) and all parts of your app that require authentication must be wrapped in the `AuthProvider` component. You will first need to define your the `AzureAdConfiguration` and then pass this to `AuthProvider` as a prop.
 
 ```javascript
 'use client'; // If using NextJS 13 with /app router
 
 import React from 'react';
 import App from './app.jsx';
-import { AuthProvider, AzureAdConfiguration, Auth } from '@null/azure-ad-react';
+import { AuthProvider, AzureAdConfiguration, Auth } from '@nullcare/azure-ad-react';
 
 // Azure Ad configuration
 const azureAdConfig: AzureAdConfiguration = {
@@ -96,11 +96,11 @@ const AppProvider = () => (
 . . .
 ```
 
-All components underneath `AuthProvider` will have access to the `useAuth` hook via context as well as all hooks and components provided by `@null/azure-ad-react`.
+All components underneath `AuthProvider` will have access to the `useAuth` hook via context as well as all hooks and components provided by `@nullcare/azure-ad-react`.
 
 ## Determining whether a user is authenticated
 
-Most applications will need to conditionally render certain components based on whether a user is signed in or not. `@null/azure-ad-react` provides a simple way to do this.
+Most applications will need to conditionally render certain components based on whether a user is signed in or not. `@nullcare/azure-ad-react` provides a simple way to do this.
 
 ### `Auth`
 
@@ -109,7 +109,7 @@ Most applications will need to conditionally render certain components based on 
 ```javascript
 'use client'; // If using NextJS 13 with /app router
 
-import { Auth } from '@null/azure-ad-react';
+import { Auth } from '@nullcare/azure-ad-react';
 
 const Page = () => {
   return (
@@ -135,7 +135,7 @@ const Page = () => {
 'use client'; // If using NextJS 13 with /app router
 
 import React from 'react';
-import { AuthProvider, AzureAdConfiguration, Auth } from '@null/azure-ad-react';
+import { AuthProvider, AzureAdConfiguration, Auth } from '@nullcare/azure-ad-react';
 
 const azureAdConfig: AzureAdConfiguration = {
   auth: {
@@ -173,7 +173,7 @@ The`useAuth` hook exposes functionality for signing a user in and out. There are
 'use client'; // If using NextJS 13 with /app router
 
 import React from 'react';
-import { Auth, useAuth } from '@null/azure-ad-react';
+import { Auth, useAuth } from '@nullcare/azure-ad-react';
   const { signInRedirect, signInPopup, signOutPopup, signOutRedirect } = useAuth();
 
 const App = () => {
@@ -205,7 +205,7 @@ To autmatically sign in users on page load, specify `autoLogin` in your `AzureAd
 
 import React from 'react';
 import App from './app.jsx';
-import { AuthProvider, AzureAdConfiguration, Auth } from '@null/azure-ad-react';
+import { AuthProvider, AzureAdConfiguration, Auth } from '@nullcare/azure-ad-react';
 
 // Azure Ad configuration
 const azureAdConfig: AzureAdConfiguration = {

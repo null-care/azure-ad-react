@@ -1,6 +1,6 @@
-# Contributing to @null/azure-ad-react
+# Contributing to @nullcare/azure-ad-react
 
-We welcome contributions from the community to make `@null/azure-ad-react` even better! Whether you want to report a bug, suggest a new feature, or submit a pull request, please follow the guidelines below.
+We welcome contributions from the community to make `@nullcare/azure-ad-react` even better! Whether you want to report a bug, suggest a new feature, or submit a pull request, please follow the guidelines below.
 
 ## Bug Reports and Feature Requests
 
@@ -15,7 +15,7 @@ When creating a new issue, please include:
 
 ## Pull Requests
 
-We encourage you to submit pull requests to help improve `@null/azure-ad-react`. Before submitting a pull request, please:
+We encourage you to submit pull requests to help improve `@nullcare/azure-ad-react`. Before submitting a pull request, please:
 
 1. Fork the repository and create a new branch for your changes.
 2. Run the tests to ensure they pass with your changes.
@@ -25,6 +25,6 @@ We encourage you to submit pull requests to help improve `@null/azure-ad-react`.
 
 ## Code Style
 
-Please follow the coding conventions and style guidelines used in `@null/azure-ad-react`. If you are unsure about anything, feel free to ask for guidance.
+Please follow the coding conventions and style guidelines used in `@nullcare/azure-ad-react`. If you are unsure about anything, feel free to ask for guidance.
 
 Thank you for contributing! We appreciate your support and look forward to your contributions.
