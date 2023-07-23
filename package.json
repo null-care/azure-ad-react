@@ -1,6 +1,21 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/null-care/azure-ad-react.git"
+  },
+  "description": "Azure AD authentication for React",
+  "keywords": [
+    "azure ad",
+    "authorization code",
+    "react",
+    "next",
+    "js",
+    "AAD",
+    "msal",
+    "oauth"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
